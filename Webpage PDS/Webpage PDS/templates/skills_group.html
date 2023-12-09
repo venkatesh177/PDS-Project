@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topbar">
+        <h2>Recruitment Portal</h2>
+      </div>
+    
+      <div class="sidebar">
+        <a href="/skills-group">Skills Group</a>
+        <a href="/clustering">Clustering</a>
+        <a href="/word-cloud">Word Cloud</a>
+        <a href="/skills-frequency">Skills Frequency</a>
+      </div>
+      
+      <div class="content">
+       
+      
+    <pre>
+        Skill Competence Characterization for Skill Group 6:
+management    0.600000
+marketing     0.514286
+media         0.371429
+digital       0.314286
+project       0.257143
+                ...   
+fresher       0.000000
+functional    0.000000
+fund          0.000000
+fusion        0.000000
+zend          0.000000
+Length: 993, dtype: float64
+    </pre>
+
+</div>
+</body>
+</html>

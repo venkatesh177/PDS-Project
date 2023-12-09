@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/styles.css') }}">
+    <title>Document</title>
+   
+</head>
+<body>
+  <div class="topbar">
+    <h2>Recruitment Portal</h2>
+  </div>
+
+  <div class="sidebar">
+    <a href="/skills-group">Skills Group</a>
+    <a href="/clustering">Clustering</a>
+    <a href="/word-cloud">Word Cloud</a>
+    <a href="/skills-frequency">Skills Frequency</a>
+  </div>
+  
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+
+
+    <!-- <a href="/skills-group">
+        <button>Skills group</button>
+      </a>
+   
+      <a href="/clustering">
+        <button>Clustering</button>
+      </a>
+   
+         
+      <a href="/word-cloud">
+        <button>Word Cloud</button>
+      </a>
+
+      <a href="/skills-frequency">
+        <button>Skills Frequency</button>
+      </a> -->
+</body>
+</html>

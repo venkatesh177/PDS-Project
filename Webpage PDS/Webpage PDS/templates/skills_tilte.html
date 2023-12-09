@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Job Titles</title>
+    <script src="main.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            padding: 8px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #skillsContent,
+        #jobTitlesContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skills and Job Titles</h1>
+    </header>
+
+    <main>
+        <button onclick="showSkills()">Skills</button>
+        <button onclick="showJobTitles()">Job Titles</button>
+
+        <div id="skillsContent">
+            <input type="text" id="skillsInput" placeholder="Enter skill">
+            <ul id="skillsList"></ul>
+
+        </div>
+
+        <div id="jobTitlesContent">
+            <input type="text" id="jobTitlesInput" placeholder="Enter job title">
+            <ul id="jobTitlesList"></ul>
+        </div>
+    </main>
+
+</body>
+</html>
